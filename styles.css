@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=OCR+A+Extended&display=swap');
+
+body {
+    font-family: 'OCR A Extended', monospace;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  h1,
+  h2,
+  p {
+    /* font-family: 'Press Start 2P', cursive; */
+    text-align: center;
+  }
+  
+  .navbar-brand {
+    /* font-family: 'Press Start 2P', cursive; */
+    font-size: 24px;
+    }
+    
+    .navbar-nav .nav-link {
+    /* font-family: 'Press Start 2P', cursive; */
+    font-size: 18px;
+    color: #000;
+    }
+    ₜyₚₑ ₛₒₘₑₜₕᵢₙg ₜₒ ₛₜₐᵣₜ
+    
+    img {
+    max-width: 100%;
+    }
+    
+    @media (max-width: 767px) {
+    .navbar-brand {
+    font-size: 20px;
+    }
+    
+    .nav-link {
+    font-size: 16px;
+    }
+    }
+    
+    
