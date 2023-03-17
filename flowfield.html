@@ -54,75 +54,70 @@
         </div>
       </div>
     </nav>
-    <body>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 data-i18n="flowfield.title"></h1>
-            <h2 data-i18n="flowfield.subtitle"></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 left-aligned">
-            <div id="canvas-container"></div>
-          </div>
-          <div class="col-md-6 left-aligned">
-            <p>
-              Amidst the noise, a dance unfolds,<br />
-              In harmony, the grid enfolds.<br />
-              Particles, like tiny sprites, <br />Glide through vectors, day and
-              night.
-            </p>
-            <p>
-              Colors change with each swift beat, <br />While brightness, hue,
-              and curves entreat. <br />Lines with elegance converge, <br />As
-              math and art in unison emerge.
-            </p>
-            <p>
-              A canvas ever-changing, bright, <br />Our world of code ignites
-              the light. <br />In beauty, chaos finds its grace, <br />A
-              flowfield's dance, forever to embrace.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p>
-              In this mesmerizing world of flowfields, particles dance
-              gracefully to the rhythm of mathematics. The code uses Perlin
-              noise to generate a two-dimensional grid of vectors that dictate
-              the particles' movement, creating a harmonious and organic
-              pattern. The variables colorInc, sat, brt, and alph define the
-              speed of color change, saturation, brightness, and opacity of the
-              particles. With a combination of numbPart, partStroke, angMult,
-              and angTurn, the code shapes the number of particles, line width,
-              curvature, and angle adjustments for the flowing lines. The
-              zOffInc, inc, and scl variables influence the speed of vector
-              changes, while cols and rows establish the grid dimensions. The
-              flowfield array stores the grid's vectors, and the particles array
-              contains the individual particles. The setup() function
-              initializes the canvas, sets color mode, and populates the
-              particles array. The draw() function brings the particles to life,
-              making them follow the flowfield, update their position, respect
-              the canvas edges, and display their colors. Interactivity is also
-              introduced. By clicking the mouse or pressing a key, users can
-              pause the animation or save a snapshot of the canvas.
-            </p>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 data-i18n="flowfield.title">
+            The Beauty of Mathematical Flowfields
+          </h1>
+          <h2 data-i18n="flowfield.subtitle">
+            A Harmonious Dance of Particles
+          </h2>
         </div>
       </div>
-      <script type="module" src="i18n.js"></script>
-
-      <script type="module" src="main.js"></script>
-      <script src="ff-color.js"></script>
-      <!-- Bootstrap JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <!-- i18next -->
-      <script src="https://unpkg.com/i18next@21.6.11/dist/umd/i18next.min.js"></script>
-
-      <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/i18nextHttpBackend.min.js"></script>
-    </body>
+      <div class="row">
+        <div class="col-md-6 left-aligned">
+          <div id="canvas-container"></div>
+        </div>
+        <div class="col-md-6 left-aligned">
+          <p>
+            Amidst the noise, a dance unfolds,<br />
+            In harmony, the grid enfolds.<br />
+            Particles, like tiny sprites, <br />Glide through vectors, day and
+            night.
+          </p>
+          <p>
+            Colors change with each swift beat, <br />While brightness, hue, and
+            curves entreat. <br />Lines with elegance converge, <br />As math
+            and art in unison emerge.
+          </p>
+          <p>
+            A canvas ever-changing, bright, <br />Our world of code ignites the
+            light. <br />In beauty, chaos finds its grace, <br />A flowfield's
+            dance, forever to embrace.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            In this mesmerizing world of flowfields, particles dance gracefully
+            to the rhythm of mathematics. The code uses Perlin noise to generate
+            a two-dimensional grid of vectors that dictate the particles'
+            movement, creating a harmonious and organic pattern. The variables
+            colorInc, sat, brt, and alph define the speed of color change,
+            saturation, brightness, and opacity of the particles. With a
+            combination of numbPart, partStroke, angMult, and angTurn, the code
+            shapes the number of particles, line width, curvature, and angle
+            adjustments for the flowing lines. The zOffInc, inc, and scl
+            variables influence the speed of vector changes, while cols and rows
+            establish the grid dimensions. The flowfield array stores the grid's
+            vectors, and the particles array contains the individual particles.
+            The setup() function initializes the canvas, sets color mode, and
+            populates the particles array. The draw() function brings the
+            particles to life, making them follow the flowfield, update their
+            position, respect the canvas edges, and display their colors.
+            Interactivity is also introduced. By clicking the mouse or pressing
+            a key, users can pause the animation or save a snapshot of the
+            canvas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="ff-color.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="i18n-es.js"></script>
   </body>
 </html>
