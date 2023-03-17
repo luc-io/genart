@@ -18,7 +18,10 @@ let hu = 0;
 let p = 1;
 
 function setup() {
-  createCanvas(500, 500);   //windowWidth-20, windowHeight-20);
+  const canvasContainer = document.getElementById('canvas-container');
+  const canvas = createCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+  canvas.parent('canvas-container');
+
   colorMode(HSB, 359, 100, 100, 100);
 
   cols = floor(width / scl);
@@ -32,6 +35,12 @@ function setup() {
   }
   background(90);
 }
+
+function windowResized() {
+  const canvasContainer = document.getElementById('canvas-container');
+  resizeCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+}
+
 
 function draw() {
   if (p > 0) {
