@@ -42,7 +42,10 @@ let randOverl = true;
 
 function setup() {
   let size = min(windowWidth, windowHeight) - 110;
-  canvas = createCanvas(size, size);
+  const canvasContainer = document.getElementById('canvas-container');
+  const canvas = createCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+  canvas.parent('canvas-container');
+  
   canvas.position(10, 95);
   hSize = size / 2;
   angleMode(DEGREES);
@@ -119,6 +122,11 @@ function setup() {
 
   colorMode(HSB, 256, 100, 100, 100);
   newArt();
+}
+
+function windowResized() {
+  const canvasContainer = document.getElementById('canvas-container');
+  resizeCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
 }
 
 function newArt() {

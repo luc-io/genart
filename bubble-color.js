@@ -1,8 +1,15 @@
 let circleList = [];
 
 function setup() {
-  createCanvas(800, 600);
+  const canvasContainer = document.getElementById('canvas-container');
+  const canvas = createCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
+  canvas.parent('canvas-container');
   noStroke();
+}
+
+function windowResized() {
+  const canvasContainer = document.getElementById('canvas-container');
+  resizeCanvas(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
 }
 
 function draw() {
