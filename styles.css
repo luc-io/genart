@@ -21,10 +21,18 @@ body {
     height: 100%;
   }
   
+  .left-aligned {
+    text-align: left;
+  }
 
+  .left-aligned p {
+    text-align: left !important;
+  }
+  
 .container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 30px auto;
+
   }
   
   h1,
