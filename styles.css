@@ -28,11 +28,26 @@ body {
   .left-aligned p {
     text-align: left !important;
   }
-  
+
 .container {
     max-width: 960px;
     margin: 30px auto;
 
+  }
+
+  .formula {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 15px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  code {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d35400;
   }
   
   h1,
